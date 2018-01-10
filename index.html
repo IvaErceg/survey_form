@@ -16,7 +16,7 @@
             <h1 id="title" class="heading-primary">Survey</h1>
         </header>
         <section id="main">
-            <p class="desc" id="description">Help us to become even more awesome!</p>
+            <p class="desc" id="description">Tell us all about yourself!</p>
             <form id="survey-form">
                 <div class="row">
                     <label for="name" id="name-label" class="input-label">* Name</label>
@@ -31,13 +31,28 @@
                     <input type="number" id="number" min=12 max=120 placeholder="Age" required>
                 </div>
                 <div class="row">
-                    <label for="dropdown" id="dropdown-label" class="input-label">Some question</label>
+                    <p>Gender</p>
+                    <div class="radio-group">
+                    <div class="radio">
+                        <label for="male" id="gender-label" class="input-label">Male</label>
+                        <input type="radio" name="gender" id="male">
+                    </div>
+                    <div class="radio">
+                    <label for="female" id="gender-label" class="input-label">Female</label>
+                    <input type="radio" name="gender" id="female"></div>
+                    <div class="radio">
+                    <label for="other" id="gender-label" class="input-label">Prefer not to say</label>
+                    <input type="radio" name="gender" id="other"></div>
+                </div>
+                </div>
+                <div class="row">
+                    <label for="dropdown" id="dropdown-label" class="input-label">Favorite book series</label>
                     <select id="dropdown">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                        <option value="soif">Song of Ice and Fire</option>
+                        <option value="lotr">Lord of the Rings</option>
+                        <option value="hp">Harry Potter</option>
+                        <option value="mist">Mistborn</option>
+                        <option value="mbof">Malazan Book of the Fallen</option>
                     </select>
                 </div>
                 <div class="row">
