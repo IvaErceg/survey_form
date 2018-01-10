@@ -5,45 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Survey Form</title>
 </head>
 
 <body>
-    <header>
-        <h1 id="title" class="heading-primary">Survey</h1>
-        <p id="description">Help us to become even more awesome!</p>
-    </header>
-    <section>
-        <form id="survey-form">
-            <label for="name" id="name-label" class="input-label">Name</label>
-            <input type="name" id="name" placeholder="Name" required>
-            <label for="email" id="email-label" class="input-label">Email</label>
-            <input type="email" id="email" placeholder="Email" required>
-            <label for="number" id="number-label" class="input-label">Age</label>
-            <input type="number" id="number" min=12 max=120 placeholder="Age" required>
-            <label for="dropdown" id="dropdown-label" class="input-label">Some question</label>
-            <select id="dropdown">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <label for="radio" id="r-label" class="input-label">Some question</label>
-            <input type="radio" name="radio" id="radio" checked>1
-            <input type="radio" name="radio" id="radio">2
-            <input type="radio" name="radio" id="radio">3
-            <label for="checkbox" id="c-label" class="input-label">Some question</label>
-            <input type="checkbox" name="checkbox" id="checkbox" checked>1
-            <input type="checkbox" name="checkbox" id="checkbox">2
-            <input type="checkbox" name="checkbox" id="checkbox">3
-            <input type="checkbox" name="checkbox" id="checkbox">4
-            <input type="checkbox" name="checkbox" id="checkbox">5
-            <label for="textarea" id="textarea-label" class="input-label">Anything to add?</label>
-            <textarea></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    <div class="container">
+        <header>
+            <h1 id="title" class="heading-primary">Survey</h1>
+        </header>
+        <section id="main">
+            <p class="desc" id="description">Help us to become even more awesome!</p>
+            <form id="survey-form">
+                <div class="row">
+                    <label for="name" id="name-label" class="input-label">* Name</label>
+                    <input type="name" id="name" placeholder="Name" required autocomplete>
+                </div>
+                <div class="row">
+                    <label for="email" id="email-label" class="input-label">* Email</label>
+                    <input type="email" id="email" placeholder="Email" required autocomplete>
+                </div>
+                <div class="row">
+                    <label for="number" id="number-label" class="input-label">* Age</label>
+                    <input type="number" id="number" min=12 max=120 placeholder="Age" required>
+                </div>
+                <div class="row">
+                    <label for="dropdown" id="dropdown-label" class="input-label">Some question</label>
+                    <select id="dropdown">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="textarea" id="textarea-label" class="input-label">Anything to add?</label>
+                    <textarea class="textarea"></textarea>
+                </div>
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </div>
 </body>
 
 </html>
